@@ -11,7 +11,7 @@ export const quickLinks: FooterSection = {
     { label: "Contact", href: "#contact" },
     {
       label: "Download Resume",
-      href: "/resume.pdf",
+      href: "./resume.pdf",
       download: true,
       external: true,
     },

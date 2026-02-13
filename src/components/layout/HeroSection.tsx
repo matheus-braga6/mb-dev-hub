@@ -79,7 +79,7 @@ export function HeroSection () {
                 >
                   <a
                     className="hover:cursor-pointer"
-                    href="/resume.pdf"
+                    href="./resume.pdf"
                     download
                   >
                     Download Resume
@@ -127,7 +127,7 @@ export function HeroSection () {
           >
             <img
               fetchPriority="high"
-              src="/matheus.webp"
+              src="./matheus.webp"
               alt="Matheus Braga"
               width={420}
               height={420}

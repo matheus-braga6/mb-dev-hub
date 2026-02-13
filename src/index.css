@@ -1,0 +1,153 @@
+@import "tailwindcss";
+
+@custom-variant dark (&:is(.dark *));
+
+@theme inline {
+  --color-blue900: var(--blue900);
+  --color-blue800: var(--blue800);
+  --color-blue700: var(--blue700);
+  --color-blue600: var(--blue600);
+  --color-blue300: var(--blue300);
+  --color-blue100: var(--blue100);
+  --color-gray50: var(--gray50);
+  --color-gray200: var(--gray200);
+  --color-accent: var(--accent);
+  --breakpoint-w900: 900px;
+  --breakpoint-xs: 370px;
+}
+
+:root {
+  --blue900: #06141B;
+  --blue800: #11212D;
+  --blue700: #253745;
+  --blue600: #4A5C6A;
+  --blue300: #9BA8AB;
+  --blue100: #CCD0CF;
+  --gray50: #F4F5F5;
+  --gray200: #CED1D3;
+  --accent: #5ce1e6;
+  --bluegradient: linear-gradient(180deg,rgba(37, 55, 69, 1) 0%, rgba(17, 33, 45, 1) 38%, rgba(6, 20, 27, 1) 100%);
+}
+
+.dark {
+  --blue900: #06141B;
+  --blue800: #11212D;
+  --blue700: #253745;
+  --blue600: #4A5C6A;
+  --blue300: #9BA8AB;
+  --blue100: #CCD0CF;
+  --gray50: #F4F5F5;
+  --gray200: #CED1D3;
+  --accent: #5ce1e6;
+  --bluegradient: linear-gradient(180deg,rgba(37, 55, 69, 1) 0%, rgba(17, 33, 45, 1) 38%, rgba(6, 20, 27, 1) 100%);
+}
+
+/* ExtraLight - 200 */
+@font-face {
+  font-family: 'Plus Jakarta Sans';
+  src: url('/fonts/PlusJakartaSans-ExtraLight.woff2') format('woff2');
+  font-weight: 200;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* Light - 300 */
+@font-face {
+  font-family: 'Plus Jakarta Sans';
+  src: url('/fonts/PlusJakartaSans-Light.woff2') format('woff2');
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* Regular - 400 */
+@font-face {
+  font-family: 'Plus Jakarta Sans';
+  src: url('/fonts/PlusJakartaSans-Regular.woff2') format('woff2');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* Medium - 500 */
+@font-face {
+  font-family: 'Plus Jakarta Sans';
+  src: url('/fonts/PlusJakartaSans-Medium.woff2') format('woff2');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* SemiBold - 600 */
+@font-face {
+  font-family: 'Plus Jakarta Sans';
+  src: url('/fonts/PlusJakartaSans-SemiBold.woff2') format('woff2');
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* Bold - 700 */
+@font-face {
+  font-family: 'Plus Jakarta Sans';
+  src: url('/fonts/PlusJakartaSans-Bold.woff2') format('woff2');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* ExtraBold - 800 */
+@font-face {
+  font-family: 'Plus Jakarta Sans';
+  src: url('/fonts/PlusJakartaSans-ExtraBold.woff2') format('woff2');
+  font-weight: 800;
+  font-style: normal;
+  font-display: swap;
+}
+
+@layer base {
+  * {
+    scroll-behavior: smooth;
+    font-family: "Plus Jakarta Sans", sans-serif;
+  }
+
+  body {
+    @apply text-white;
+  }
+
+  .custom-scrollbar::-webkit-scrollbar {
+    height: 10px;
+  }
+
+  .custom-scrollbar::-webkit-scrollbar-track {
+    background: var(--gray200);
+  }
+
+  .custom-scrollbar::-webkit-scrollbar-thumb {
+    background: var(--blue800)
+  }
+
+  .custom-scrollbar::-webkit-scrollbar-thumb:hover {
+    background-color: var(--blue700)
+  }
+
+  .merrygo-bullet {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: #90a1b9;
+    border: none;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+
+  .merrygo-bullet-active {
+    background: #020618;
+  }
+}
+
+@layer utilities {
+  .bg-blue-gradient {
+    background: var(--bluegradient);
+  }
+}

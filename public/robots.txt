@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://matheus-braga6.github.io/mdevelopment/

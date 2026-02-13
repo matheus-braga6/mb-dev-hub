@@ -50,7 +50,7 @@ export function CertificationSection () {
           whileInView="visible"
           viewport={{ once: true }}
         >
-          <div className="w-full relative px-12 pb-14">
+          <div className="w-full relative px-8 w900:px-12 pb-12">
             <div ref={galleryRef} className="certifications w-full overflow-hidden select-none">
               <div 
                 ref={galleryInnerRef} 
@@ -87,28 +87,28 @@ export function CertificationSection () {
               ref={galleryArrowPrevRef} 
               className="
                 certifications__arrow certifications__arrow--prev
-                w-10 h-10
-                absolute top-[50%] translate-y-[-50%] left-0
+                w-7 h-7 w900:w-10 w900:h-10
+                absolute top-[42%] translate-y-[-50%] left-0
                 flex items-center justify-center
                 rounded-full cursor-pointer
                 bg-slate-50 hover:bg-slate-400 transition-colors
               "
             >
-              <ArrowLeftIcon className="w-6 h-6 text-slate-950"/>
+              <ArrowLeftIcon className="w-5 h-5 w900:w-6 w900:h-6 text-slate-950"/>
             </div>
 
             <div 
               ref={galleryArrowNextRef} 
               className="
                 certifications__arrow certifications__arrow--next
-                w-10 h-10
-                absolute top-[50%] translate-y-[-50%] right-0
+                w-7 h-7 w900:w-10 w900:h-10
+                absolute top-[42%] translate-y-[-50%] right-0
                 flex items-center justify-center
                 rounded-full cursor-pointer
                 bg-slate-50 hover:bg-slate-400 transition-colors
               "
             >
-              <ArrowRightIcon className="w-6 h-6 text-slate-950"/>
+              <ArrowRightIcon className="w-5 h-5 w900:w-6 w900:h-6 text-slate-950"/>
             </div>
 
             <div 

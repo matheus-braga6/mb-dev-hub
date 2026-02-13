@@ -6,6 +6,7 @@ import { visualizer } from 'rollup-plugin-visualizer'
 import path from "path"
 
 export default defineConfig({
+  base: "/mb-dev-hub/",
   plugins: [
     react(),
     tailwindcss(),

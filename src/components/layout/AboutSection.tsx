@@ -51,7 +51,7 @@ export function AboutSection () {
               <Card className="p-6 gap-4 shadow-md shadow-blue800 h-max rounded-lg border-blue600 flex-row items-center">
                 <CodeBoxFillIcon className="h-12 w-12 shrink-0"/>
                 <CardContent className="p-0">
-                  <p className="text-3xl font-bold">2+</p>
+                  <p className="text-3xl font-bold">2.5+</p>
                   <p className="mt-1 text-sm text-muted-foreground">
                     Years of Experience
                   </p>

@@ -103,7 +103,7 @@ export function ProjectsSection() {
 
         <div className="mt-8 text-center">
           <Button
-            className="h-12 cursor-pointer bg-blue700 hover:bg-blue600 transition-colors"
+            className="w-50 h-14 text-md cursor-pointer bg-blue700 hover:bg-blue600 transition-colors"
              onClick={handleToggle}
           >
             {showAll ? "See less" : "See more"}

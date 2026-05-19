@@ -24,5 +24,11 @@ export const certifications: CertificationImage[] = [
     image: "./certifications/a2-english.webp",
     alt: "A2 English for Developers",
     link: "https://www.freecodecamp.org/certification/braga/a2-english-for-developers"
+  },
+  {
+    id: "b1english-freecodecamp",
+    image: "./certifications/b1-english.webp",
+    alt: "B1 English for Developers",
+    link: "https://www.freecodecamp.org/certification/braga/b1-english-for-developers"
   }
 ]

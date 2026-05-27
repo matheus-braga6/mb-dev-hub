@@ -11,6 +11,7 @@ import { WindowFillIcon } from "@/assets/icons/WindowFillIcon"
 import { GraduationCapIcon } from "@/assets/icons/GraduationCapIcon"
 import { ShakeHandsLineIcon } from "@/assets/icons/ShakeHandsLine"
 import { BriefCaseLineIcon } from "@/assets/icons/BriefCaseLineIcon"
+import { TranslateLineIcon } from "@/assets/icons/TranslateLineIcon"
 import { experiences } from "@/data/experiences"
 import { motion } from "motion/react"
 import {
@@ -118,13 +119,56 @@ export function AboutSection () {
                 </motion.div>
               </CardContent>
             </Card>
+
+            <Card className="p-6 gap-4 shadow-md shadow-blue800 h-max rounded-lg border-blue600">
+              <CardHeader className="w-max p-0 gap-0">
+                <div className="flex items-center gap-3">
+                  <TranslateLineIcon className="h-8 w-8 shrink-0" />
+                  <CardTitle>
+                    <h3 className="text-sm font-semibold uppercase tracking-wider">
+                      Languages
+                    </h3>
+                  </CardTitle>
+                </div>
+              </CardHeader>
+
+              <CardContent className="p-0">
+                <p className="font-medium">
+                  Portuguese
+                </p>
+                <p className="mt-1 text-sm text-muted-foreground">
+                  Native
+                </p>
+              </CardContent>
+
+              <CardContent className="p-0">
+                <p className="font-medium">
+                  English
+                </p>
+                <p className="mt-1 text-sm text-muted-foreground">
+                  B1 (Technical Reading & Professional Communication)
+                </p>
+              </CardContent>
+
+              <CardContent className="p-0">
+                <p className="font-medium">
+                  Spanish
+                </p>
+                <p className="mt-1 text-sm text-muted-foreground">
+                  Intermediate
+                </p>
+              </CardContent>
+            </Card>
           </motion.div>
 
           <motion.div 
             variants={aboutColumnRightVariants}
             className="p-6 flex flex-col gap-8 bg-blue900 shadow-2xl rounded-3xl border border-blue600"
           > 
-            <motion.div variants={aboutCardVariants}>
+            <motion.div 
+              variants={aboutCardVariants}
+              className="h-full"
+            >
               <Card className="p-6 gap-4 shadow-md shadow-blue800 h-full rounded-lg border-blue600">
                 <CardHeader className="p-0 gap-0">
                   <div className="flex items-center gap-3">

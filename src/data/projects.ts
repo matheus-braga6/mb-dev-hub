@@ -64,15 +64,14 @@ export const projects: Project[] = [
     demoUrl: "https://www.automizei.com/",
   },
   {
-    id: "react-tenzies",
-    title: "React Tenzies Game",
+    id: "acamargo-ecommerce",
+    title: "A. Camargo E-commerce",
     description:
-      "A dice game built with React, HTML, and CSS, where players aim to match dice combinations. The project emphasizes dynamic interactions, responsive design, and engaging user experience.",
-    image: "./projects/tenzies.webp",
-    technologies: ["React", "HTML", "CSS"],
-    type: "personal",
-    repoUrl: "https://github.com/matheus-braga6/react-tenzies-game",
-    demoUrl: "https://matheus-braga6.github.io/react-tenzies-game/",
+      "A full-featured e-commerce platform developed while working at Increazy, where I was responsible for the front-end implementation. The project includes CMS integrations for dynamic content management, a scalable architecture, and a strong focus on performance, usability, and maintainability.",
+    image: "./projects/acamargo.webp",
+    technologies: ["JavaScript", "Vue.js", "HTML", "CSS", "Twig"],
+    type: "professional",
+    demoUrl: "https://www.acamargo.com/",
   },
   {
     id: "casa-do-produtor-ecommerce",
@@ -94,5 +93,16 @@ export const projects: Project[] = [
     type: "personal",
     repoUrl: "https://github.com/matheus-braga6/react-chef-ai",
     demoUrl: "https://matheus-braga6.github.io/react-chef-ai/",
+  },
+  {
+    id: "react-tenzies",
+    title: "React Tenzies Game",
+    description:
+      "A dice game built with React, HTML, and CSS, where players aim to match dice combinations. The project emphasizes dynamic interactions, responsive design, and engaging user experience.",
+    image: "./projects/tenzies.webp",
+    technologies: ["React", "HTML", "CSS"],
+    type: "personal",
+    repoUrl: "https://github.com/matheus-braga6/react-tenzies-game",
+    demoUrl: "https://matheus-braga6.github.io/react-tenzies-game/",
   }
 ]

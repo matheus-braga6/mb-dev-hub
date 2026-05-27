@@ -34,7 +34,7 @@ export function HeroSection () {
             </h1>
 
             <span className="mt-4 block text-sm md:text-base">
-              Frontend Developer | React | Vue
+              Frontend Developer | TypeScript | React | Vue.js
             </span>
 
             <motion.div

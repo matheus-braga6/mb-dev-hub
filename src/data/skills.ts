@@ -2,24 +2,24 @@ import type { Skill } from "@/types/skills"
 
 export const skills: Skill[] = [
   { id: 1, 
-    name: "HTML", 
+    name: "TypeScript", 
     category: "frontend", 
-    icon: "./skills/html.svg" 
+    icon: "./skills/ts.svg" 
   },
   { id: 2, 
-    name: "CSS", 
-    category: "frontend", 
-    icon: "./skills/css.svg"
-  },
-  { id: 3, 
     name: "JavaScript", 
     category: "frontend", 
     icon: "./skills/js.svg" 
   },
-  { id: 4, 
-    name: "TypeScript", 
+  { id: 3, 
+    name: "HTML", 
     category: "frontend", 
-    icon: "./skills/ts.svg" 
+    icon: "./skills/html.svg" 
+  },
+  { id: 4, 
+    name: "CSS", 
+    category: "frontend", 
+    icon: "./skills/css.svg"
   },
   { id: 5, 
     name: "React", 

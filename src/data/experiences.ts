@@ -7,11 +7,13 @@ export const experiences: Experience[] = [
     location: "Remote",
     period: "Mar 2024 – Present",
     responsibilities: [
-      "Developed and maintained ecommerce websites and marketing pages.",
-      "Worked on the company’s internal dashboard and CMS.",
-      "Built reusable components and dynamic interfaces.",
-      "Improved PageSpeed and Core Web Vitals.",
-      "Ensured responsive design and UI consistency.",
+      "Worked on the development and maintenance of web applications focused on e-commerce, marketing pages, administrative dashboards, and the company’s internal CMS.",
+      "Developed new features and interfaces with a focus on performance, responsiveness, user experience, and maintainable code.",
+      "Created reusable components and standardized frontend structures to ensure visual consistency and scalability across different projects.",
+      "Participated in technical decisions related to frontend architecture, code organization, application structure, and business rule implementation.",
+      "Integrated and consumed APIs for communication between frontend and backend systems.",
+      "Collaborated directly with different teams to understand requirements, gather project needs, and define solutions for new features.",
+      "Contributed to frontend performance improvements, including optimizations focused on PageSpeed and Core Web Vitals metrics."
     ],
   },
   {
@@ -19,9 +21,10 @@ export const experiences: Experience[] = [
     location: "Remote",
     period: "2024 – Present",
     responsibilities: [
-      "Delivered custom frontend solutions for small businesses and personal projects.",
-      "Built responsive websites and interactive components.",
-      "Worked directly with clients to understand requirements and deliver results.",
+      "Developed custom web applications and interfaces for small businesses and independent projects.",
+      "Built responsive frontend solutions using React, Vue.js, JavaScript, and TypeScript, with a focus on usability, code organization, and maintainability",
+      "Worked directly with clients to gather requirements, define project scope, align expectations, and deliver solutions tailored to each project’s needs.",
+      "Integrated APIs and developed dynamic features for different types of web applications."
     ],
   },
 ]

@@ -84,7 +84,7 @@ export const skills: Skill[] = [
     icon: "./skills/canva.svg" 
   },
   { id: 17, 
-    name: "Docussaurus", 
+    name: "Docusaurus", 
     category: "tools", 
     icon: "./skills/docussaurus.svg" 
   },

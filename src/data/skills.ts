@@ -56,36 +56,44 @@ export const skills: Skill[] = [
     category: "frontend", 
     icon: "./skills/shadcn.svg" 
   },
-
   { id: 12, 
+    name: "Twig", 
+    category: "frontend", 
+    icon: "./skills/twig.svg" 
+  },
+  { id: 13, 
     name: "Git", 
     category: "tools", 
     icon: "./skills/git.svg" 
   },
-  { id: 13, 
+  { id: 14, 
     name: "GitHub", 
     category: "tools", 
     icon: "./skills/github.svg" 
   },
-  { id: 14, 
+  { id: 15, 
+    name: "GitLab", 
+    category: "tools", 
+    icon: "./skills/gitlab.svg" 
+  },
+  { id: 16, 
+    name: "WordPress", 
+    category: "tools", 
+    icon: "./skills/wordpress.svg" 
+  },
+  { id: 17, 
     name: "VS Code", 
     category: "tools", 
     icon: "./skills/vscode.svg" 
   },
-
-  { id: 15, 
+  { id: 18, 
     name: "Figma", 
     category: "design", 
     icon: "./skills/figma.svg" 
   },
-  { id: 16, 
+  { id: 19, 
     name: "Canva", 
     category: "design", 
     icon: "./skills/canva.svg" 
-  },
-  { id: 17, 
-    name: "Docusaurus", 
-    category: "tools", 
-    icon: "./skills/docussaurus.svg" 
-  },
+  }
 ]

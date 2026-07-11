@@ -38,7 +38,7 @@ export function AboutSection () {
     <section id="about" className="bg-blue800 py-12 overflow-x-hidden">
       <Container>
         <motion.div
-          className="grid grid-cols-1 gap-7 md:grid-cols-2"
+          className="grid grid-cols-1 gap-7"
           variants={aboutContainerVariants}
           initial="hidden"
           whileInView="visible"

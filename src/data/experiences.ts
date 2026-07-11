@@ -3,9 +3,20 @@ import type { Experience } from "@/types/experience"
 export const experiences: Experience[] = [
   {
     role: "Frontend Developer",
+    company: "Nerau",
+    location: "Remote",
+    period: "Jul 2026 – Present",
+    responsibilities: [
+      "Working on the development and maintenance of institutional websites and e-commerce platforms, with a focus on frontend development using WordPress, PHP, JavaScript, HTML, and CSS to implement new features, resolve bugs, and improve performance across client projects.",
+      "Collaborate with designers, project managers, and developers to deliver scalable, high-quality digital solutions.",
+      "Also contribute to the implementation and maintenance of e-commerce stores on the Increazy platform, as well as internal projects using modern frontend technologies."
+    ]
+  },
+  {
+    role: "Frontend Developer",
     company: "Increazy",
     location: "Remote",
-    period: "Mar 2024 – Present",
+    period: "Mar 2024 – Jun 2026",
     responsibilities: [
       "Worked on the development and maintenance of web applications focused on e-commerce, marketing pages, administrative dashboards, and the company’s internal CMS.",
       "Developed new features and interfaces with a focus on performance, responsiveness, user experience, and maintainable code.",

@@ -1,4 +1,5 @@
 import { useState, useRef, useEffect } from "react"
+import { useLanguage } from "@/i18n/LanguageContext"
 import { Container } from "@/components/layout/Container"
 import { Button } from "@/components/ui/button"
 import { projects } from "@/data/projects"
@@ -31,7 +32,9 @@ function useGridColumns() {
   return columns
 }
 
-export function ProjectsSection() {
+export function ProjectsSection() { 
+  const { t } = useLanguage()
+
   const [showAll, setShowAll] = useState(false)
   const sectionRef = useRef<HTMLElement | null>(null)
 
@@ -76,7 +79,7 @@ export function ProjectsSection() {
           whileInView="visible"
           viewport={{ once: true, amount: 0.3 }}
         >
-          My Projects
+          {t.projects.title}
         </motion.h2>
 
         <motion.div
@@ -106,7 +109,7 @@ export function ProjectsSection() {
             className="w-50 h-14 text-md cursor-pointer bg-blue700 hover:bg-blue600 transition-colors"
              onClick={handleToggle}
           >
-            {showAll ? "See less" : "See more"}
+            {showAll ? t.projects.seeLess : t.projects.seeMore}
           </Button>
         </div>
       </Container>

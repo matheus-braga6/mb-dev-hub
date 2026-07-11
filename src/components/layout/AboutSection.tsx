@@ -1,3 +1,4 @@
+import { useLanguage } from "@/i18n/LanguageContext"
 import { Container } from "./Container"
 import {
   Card,
@@ -24,15 +25,9 @@ import {
 } from "@/lib/animations/about"
 
 export function AboutSection () {
-  const softSkills: string[] = [
-    "Communication",
-    "Problem Solving",
-    "Teamwork",
-    "Ownership",
-    "Adaptability",
-    "Creativity",
-    "Time Management"
-  ]
+  const { t, tl } = useLanguage()
+
+  const softSkills = t.about.softSkills
 
   return (
     <section id="about" className="bg-blue800 py-12 overflow-x-hidden">
@@ -54,7 +49,7 @@ export function AboutSection () {
                 <CardContent className="p-0">
                   <p className="text-3xl font-bold">2.5+</p>
                   <p className="mt-1 text-sm text-muted-foreground">
-                    Years of Experience
+                    {t.about.yearsOfExperience}
                   </p>
                 </CardContent>
               </Card>
@@ -64,7 +59,7 @@ export function AboutSection () {
                 <CardContent className="p-0">
                   <p className="text-3xl font-bold">30+</p>
                   <p className="mt-1 text-sm text-muted-foreground">
-                    Projects Completed
+                    {t.about.projectsCompleted}
                   </p>
                 </CardContent>
               </Card>
@@ -76,7 +71,7 @@ export function AboutSection () {
                   <GraduationCapIcon className="h-8 w-8 shrink-0" />
                   <CardTitle>
                     <h3 className="text-sm font-semibold uppercase tracking-wider">
-                      Education
+                      {t.about.education}
                     </h3>
                   </CardTitle>
                 </div>
@@ -84,10 +79,10 @@ export function AboutSection () {
 
               <CardContent className="p-0">
                 <p className="font-medium">
-                  Self-Taught Frontend Developer
+                  {t.about.educationSchool}
                 </p>
                 <p className="mt-1 text-sm text-muted-foreground">
-                  2023 – Present
+                  {t.about.educationPeriod}
                 </p>
               </CardContent>
             </Card>
@@ -98,7 +93,7 @@ export function AboutSection () {
                   <ShakeHandsLineIcon className="h-8 w-8 shrink-0" />
                   <CardTitle>
                     <h3 className="text-sm font-semibold uppercase tracking-wider">
-                      Soft Skills
+                      {t.about.softSkillsTitle}
                     </h3>
                   </CardTitle>
                 </div>
@@ -109,8 +104,8 @@ export function AboutSection () {
                   className="flex flex-wrap gap-2"
                   variants={badgeContainerVariants}
                 >
-                  {softSkills.map((skill) => (
-                    <motion.div key={skill} variants={badgeVariants}>
+                  {softSkills.map((skill, index) => (
+                    <motion.div key={index} variants={badgeVariants}>
                       <Badge variant="secondary" className="h-10 rounded-sm bg-blue700 text-sm border-blue600">
                         {skill}
                       </Badge>
@@ -126,38 +121,19 @@ export function AboutSection () {
                   <TranslateLineIcon className="h-8 w-8 shrink-0" />
                   <CardTitle>
                     <h3 className="text-sm font-semibold uppercase tracking-wider">
-                      Languages
+                      {t.about.languagesTitle}
                     </h3>
                   </CardTitle>
                 </div>
               </CardHeader>
 
-              <CardContent className="p-0">
-                <p className="font-medium">
-                  Portuguese
-                </p>
-                <p className="mt-1 text-sm text-muted-foreground">
-                  Native
-                </p>
-              </CardContent>
+              {t.about.languages.map((language) => (
+                <CardContent key={language.name} className="p-0">
+                  <p className="font-medium">{language.name}</p>
+                  <p className="mt-1 text-sm text-muted-foreground">{language.level}</p>
+                </CardContent>
+              ))}
 
-              <CardContent className="p-0">
-                <p className="font-medium">
-                  English
-                </p>
-                <p className="mt-1 text-sm text-muted-foreground">
-                  B1 (Technical Reading & Professional Communication)
-                </p>
-              </CardContent>
-
-              <CardContent className="p-0">
-                <p className="font-medium">
-                  Spanish
-                </p>
-                <p className="mt-1 text-sm text-muted-foreground">
-                  Intermediate
-                </p>
-              </CardContent>
             </Card>
           </motion.div>
 
@@ -175,32 +151,32 @@ export function AboutSection () {
                     <BriefCaseLineIcon className="h-8 w-8 shrink-0" />
                     <CardTitle>
                       <h3 className="text-sm font-semibold uppercase tracking-wider">
-                        Experience
+                        {t.about.experienceTitle}
                       </h3>
                     </CardTitle>
                   </div>
                 </CardHeader>
 
                 <CardContent className="p-0 flex flex-col gap-4">
-                  {experiences.map((exp) => (
-                    <article key={`${exp.role}-${exp.period}`}>
+                  {experiences.map((exp, index) => (
+                    <article 	key={index}>
                       <h4 className="text-base font-medium">
-                        {exp.role}
+                        {tl(exp.role)}
                       </h4>
 
                       <p className="text-sm text-muted-foreground mt-1">
                         {exp.company && `${exp.company} · `}
-                        {exp.location && `${exp.location} · `}
-                        {exp.period}
+                        {exp.location && `${tl(exp.location)} · `}
+                        {tl(exp.period)}
                       </p>
 
                       <ul className="list-disc flex flex-col py-4 pl-5 gap-1 text-sm">
-                        {exp.responsibilities.map((item) => (
+                        {exp.responsibilities.map((item, idx) => (
                           <li 
-                            key={item}
+                            key={idx}
                             className="text-sm"
                           >
-                            {item}
+                            {tl(item)}
                           </li>
                         ))}
                       </ul>

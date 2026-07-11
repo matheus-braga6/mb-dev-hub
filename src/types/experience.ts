@@ -1,7 +1,9 @@
+import type { LocalizedText } from "@/i18n/config"
+
 export interface Experience {
-  role: string
+  role: LocalizedText
   company?: string
-  location?: string
-  period: string
-  responsibilities: string[]
+  location?: LocalizedText
+  period: LocalizedText
+  responsibilities: LocalizedText[]
 }

@@ -1,16 +1,19 @@
 import type { FooterSection } from "@/types/footer"
 
 export const quickLinks: FooterSection = {
-  title: "Quick Links",
+  title: {
+    en: "Quick Links",
+    pt: "Links Rápidos",
+  },
   links: [
-    { label: "Home", href: "#" },
-    { label: "Projects", href: "#projects"},
-    { label: "About", href: "#about" },
-    { label: "Skills", href: "#skills" },
-    { label: "Learning & Certifications", href: "#certifications" },
-    { label: "Contact", href: "#contact" },
+    { label: { en: "Home", pt: "Início" }, href: "#" },
+    { label: { en: "Projects", pt: "Projetos" }, href: "#projects" },
+    { label: { en: "About", pt: "Sobre" }, href: "#about" },
+    { label: { en: "Skills", pt: "Habilidades" }, href: "#skills" },
+    { label: { en: "Learning & Certifications", pt: "Cursos & Certificações" }, href: "#certifications" },
+    { label: { en: "Contact", pt: "Contato" }, href: "#contact" },
     {
-      label: "Download Resume",
+      label: { en: "Download Resume", pt: "Baixar Currículo" },
       href: "./resume.pdf",
       download: true,
       external: true,
@@ -19,15 +22,24 @@ export const quickLinks: FooterSection = {
 }
 
 export const contactLinks: FooterSection = {
-  title: "Contact",
+  title: {
+    en: "Contact",
+    pt: "Contato",
+  },
   links: [
     {
-      label: "mbdevelopment.dev@gmail.com",
+      label: {
+        en: "mbdevelopment.dev@gmail.com",
+        pt: "mbdevelopment.dev@gmail.com",
+      },
       href: "mailto:mbdevelopment.dev@gmail.com",
       external: true,
     },
     {
-      label: "+55 44 99954-6644",
+      label: {
+        en: "+55 44 99954-6644",
+        pt: "+55 44 99954-6644",
+      },
       href: "https://wa.me/5544999546644",
       external: true,
     },

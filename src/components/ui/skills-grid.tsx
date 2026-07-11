@@ -1,3 +1,4 @@
+import { useLanguage } from "@/i18n/LanguageContext"
 import { Card, CardContent } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
 import type { Skill } from "@/types/skills"
@@ -7,6 +8,8 @@ interface SkillsGridProps {
 }
 
 export function SkillsGrid({ items }: SkillsGridProps) {
+  const { t } = useLanguage()
+
   return (
     <div className="grid gap-6 xs:grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
       {items.map(skill => (
@@ -41,7 +44,7 @@ export function SkillsGrid({ items }: SkillsGridProps) {
                 lg:opacity-0 lg:group-hover:opacity-100 transition-opacity
               "
             >
-              {skill.category}
+              {t.skills[skill.category]}
             </Badge>
           </CardContent>
         </Card>

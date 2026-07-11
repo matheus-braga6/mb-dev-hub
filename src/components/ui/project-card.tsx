@@ -1,3 +1,4 @@
+import { useLanguage } from "@/i18n/LanguageContext"
 import type { Project } from "@/types/project"
 import {
   Card,
@@ -12,6 +13,8 @@ interface ProjectCardProps {
 }
 
 export function ProjectCard({ project }: ProjectCardProps) {
+  const { t, tl } = useLanguage()
+
   const techColors: Record<string, string> = {
     React: "bg-[#00d8ff] text-black",
     "Vue.js": "bg-[#0c9400] text-white",
@@ -92,7 +95,7 @@ export function ProjectCard({ project }: ProjectCardProps) {
 
         <CardContent className="pt-0 px-0">
           <p className="text-sm text-blue900">
-            {project.description}
+            {tl(project.description)}
           </p>
         </CardContent>
 
@@ -109,7 +112,7 @@ export function ProjectCard({ project }: ProjectCardProps) {
                 transition-colors
               "
             >
-              Repository
+              {t.projects.repository}
             </a>
           )}
 
@@ -124,7 +127,7 @@ export function ProjectCard({ project }: ProjectCardProps) {
               transition-colors
             "
           >
-            Live Demo
+            {t.projects.liveDemo}
           </a>
         </CardFooter>
       </div>

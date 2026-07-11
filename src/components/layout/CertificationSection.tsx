@@ -1,4 +1,5 @@
 import { useEffect, useRef } from "react"
+import { useLanguage } from "@/i18n/LanguageContext"
 import { Container } from "./Container"
 import { ArrowLeftIcon } from "@/assets/icons/ArrowLeftIcon"
 import { ArrowRightIcon } from "@/assets/icons/ArrowRightIcon"
@@ -8,6 +9,8 @@ import { motion } from "framer-motion"
 import { certificationsTitleVariants, certificationsContainerVariants} from "@/lib/animations/certifications"
 
 export function CertificationSection () {
+  const { t } = useLanguage()
+
   const galleryRef = useRef<HTMLDivElement | null>(null)
   const galleryInnerRef = useRef<HTMLDivElement | null>(null)
   const galleryArrowNextRef = useRef<HTMLDivElement | null>(null)
@@ -41,7 +44,7 @@ export function CertificationSection () {
           whileInView="visible"
           viewport={{ once: true, amount: 0.3 }}
         >
-          Learning & Certifications
+          {t.certifications.title}
         </motion.h2>
 
         <motion.div

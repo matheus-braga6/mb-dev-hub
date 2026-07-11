@@ -1,3 +1,4 @@
+import { useLanguage } from "@/i18n/LanguageContext"
 import { Container } from "@/components/layout/Container"
 import { quickLinks, contactLinks } from "@/data/footer"
 import { SocialIconButton } from "../ui/social-icon-button"
@@ -7,6 +8,8 @@ import { MailFillIcon } from "@/assets/icons/MailFillIcon"
 import { WhatsAppFillIcon } from "@/assets/icons/WhatsAppFillIcon"
 
 export function Footer() {
+  const { t, tl } = useLanguage()
+
   return (
     <footer className="bg-blue900">
       <div className="w-full bg-blue800 border border-blue600 rounded-t-[50px]">
@@ -14,10 +17,10 @@ export function Footer() {
           <div className="grid gap-7 lg:gap-12 py-16 md:grid-cols-3">
             <div className="space-y-4">
               <h3 className="text-xl font-bold">Matheus Braga</h3>
-              <p className="text-slate-400 text-sm max-w-sm">
-                Let’s connect and build something great together.<br />
-                I’m always open to new opportunities and exciting challenges.
+              <p className="text-slate-400 text-sm max-w-sm whitespace-pre-line">
+                {t.footer.tagline}
               </p>
+
 
               <div className="flex gap-3 mt-8">
                 <SocialIconButton
@@ -52,19 +55,19 @@ export function Footer() {
             </div>
 
             <div className="space-y-4">
-              <h4 className="text-lg font-semibold">Quick Links</h4>
+              <h4 className="text-lg font-semibold">{quickLinks.title && tl(quickLinks.title)}</h4>
 
               <ul className="space-y-2 text-sm text-slate-400">
                 {quickLinks.links.map((link) => (
-                  <li key={link.label}>
+                  <li key={link.href}>
                     <a
                       href={link.href}
                       target={link.external ? "_blank" : undefined}
                       rel={link.external ? "noopener noreferrer" : undefined}
-                       download={link.download}
+                      download={link.download}
                       className="hover:text-slate-200"
                     >
-                      {link.label}
+                      {tl(link.label)}
                     </a>
                   </li>
                 ))}
@@ -72,18 +75,18 @@ export function Footer() {
             </div>
 
             <div className="space-y-4">
-              <h4 className="text-lg font-semibold">Contact</h4>
+              <h4 className="text-lg font-semibold">{contactLinks.title && tl(contactLinks.title)}</h4>
 
               <ul className="space-y-2 text-sm text-slate-400">
                 {contactLinks.links.map((link) => (
-                  <li key={link.label}>
+                  <li key={link.href}>
                     <a
                       href={link.href}
                       target={link.external ? "_blank" : undefined}
                       rel={link.external ? "noopener noreferrer" : undefined}
                       className="hover:text-slate-200"
                     >
-                      {link.label}
+                      {tl(link.label)}
                     </a>
                   </li>
                 ))}
@@ -93,7 +96,7 @@ export function Footer() {
 
           <div className="border-t border-slate-800 py-6">
             <p className="text-center text-xs text-slate-500">
-              © {new Date().getFullYear()} Matheus Braga. All rights reserved.
+              © {new Date().getFullYear()} Matheus Braga. {t.footer.rightsReserved}
             </p>
           </div>
         </Container>

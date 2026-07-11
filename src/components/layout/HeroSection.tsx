@@ -1,3 +1,4 @@
+import { useLanguage } from "@/i18n/LanguageContext"
 import { Container } from "./Container"
 import { Button } from "@/components/ui/button"
 import { SocialIconButton } from "../ui/social-icon-button"
@@ -9,6 +10,8 @@ import { motion } from "motion/react"
 import { heroContentVariants, heroImageVariants, heroLineVariants } from "@/lib/animations/hero"
 
 export function HeroSection () {
+  const { t } = useLanguage()
+
   return (
     <section 
       className="
@@ -30,11 +33,11 @@ export function HeroSection () {
             animate="visible"
           >
             <h1 className="text-[clamp(2.5rem,4.5vw,4.9rem)] font-bold leading-none">
-              Hi, I&apos;m<br />Matheus Braga
+              {t.hero.greeting}<br />Matheus Braga
             </h1>
 
             <span className="mt-4 block text-sm md:text-base">
-              Frontend Developer | TypeScript | React | Vue.js
+              {t.hero.tagline}
             </span>
 
             <motion.div
@@ -46,15 +49,14 @@ export function HeroSection () {
             />
 
             <p className="mt-8 text-sm md:text-base leading-relaxed">
-              I’m a frontend developer focused on building scalable, accessible,
-              and high-quality user interfaces using modern web technologies.
+              {t.hero.intro}
             </p>
 
             <div className="mt-8 flex flex-wrap items-center gap-4">
                 <Button 
                   asChild 
                   className="
-                    w-28 h-12
+                    min-w-28 h-12
                     bg-blue700 hover:bg-blue600
                     transition-colors
                   "
@@ -63,7 +65,7 @@ export function HeroSection () {
                     className="cursor-pointer"
                     href="#projects" 
                   >
-                    My Projects
+                    {t.hero.myProjects}
                   </a>
                 </Button>
 
@@ -82,7 +84,7 @@ export function HeroSection () {
                     href="./resume.pdf"
                     download
                   >
-                    Download Resume
+                    {t.hero.downloadResume}
                   </a>
                 </Button>
             </div>

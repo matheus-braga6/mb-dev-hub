@@ -1,3 +1,4 @@
+import { useLanguage } from "@/i18n/LanguageContext"
 import { Container } from "@/components/layout/Container"
 import { Input } from "@/components/ui/input"
 import { Textarea } from "@/components/ui/textarea"
@@ -10,6 +11,8 @@ import { contactContainerVariants } from "@/lib/animations/contact"
 
 
 export function ContactSection() {
+  const { t } = useLanguage()
+
   const [state, handleSubmit] = useForm("xwvnpvwg");
 
   return (
@@ -22,7 +25,7 @@ export function ContactSection() {
           viewport={{ once: true }}
         >
           <h2 className="text-4xl font-bold mb-16 uppercase text-center">
-            Send Your Message
+            {t.contact.title}
           </h2>
         
           <form 
@@ -37,11 +40,11 @@ export function ContactSection() {
             "
           >
             <div className="space-y-2">
-              <Label htmlFor="name" className="text-base">Name</Label>
+              <Label htmlFor="name" className="text-base">{t.contact.nameLabel}</Label>
               <Input
                 id="name"
                 name="name"
-                placeholder="Your name"
+                placeholder={t.contact.namePlaceholder}
                 className="
                   h-12
                   bg-blue800
@@ -54,12 +57,12 @@ export function ContactSection() {
             </div>
 
             <div className="space-y-2">
-              <Label htmlFor="email" className="text-base">Email</Label>
+              <Label htmlFor="email" className="text-base">{t.contact.emailLabel}</Label>
               <Input
                 id="email"
                 name="email"
                 type="email"
-                placeholder="your@email.com"
+                placeholder={t.contact.emailPlaceholder}
                 className="
                   h-12
                   bg-blue800
@@ -72,11 +75,11 @@ export function ContactSection() {
             </div>
 
             <div className="space-y-2">
-              <Label htmlFor="message" className="text-base">Message</Label>
+              <Label htmlFor="message" className="text-base">{t.contact.messageLabel}</Label>
               <Textarea
                 id="message"
                 name="message"
-                placeholder="Your message..."
+                placeholder={t.contact.messagePlaceholder}
                 className="
                   bg-blue800
                   border-blue600
@@ -106,9 +109,9 @@ export function ContactSection() {
                   <LoaderLineIcon className="size-6 animate-spin" />
                 </>
               ) : state.succeeded ? (
-                "Message Submitted"
+                t.contact.submitted
               ) : (
-                "Send Message"
+                t.contact.send
               )}
             </Button>
           </form>

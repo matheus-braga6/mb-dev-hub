@@ -1,3 +1,4 @@
+import { useLanguage } from "@/i18n/LanguageContext"
 import { Container } from "@/components/layout/Container"
 import {
   Tabs,
@@ -11,6 +12,8 @@ import { motion } from "framer-motion"
 import { skillsTitleVariants, skillsTabContent, skillsContainerVariants } from "@/lib/animations/skills"
 
 export function SkillsSection () {
+  const { t } = useLanguage()
+
   return (
     <section id="skills" className="py-12 bg-blue800">
       <Container>
@@ -21,7 +24,7 @@ export function SkillsSection () {
           whileInView="visible"
           viewport={{ once: true, amount: 0.3 }}
         >
-          Skills
+          {t.skills.title}
         </motion.h2>
 
         <motion.div
@@ -31,7 +34,7 @@ export function SkillsSection () {
           viewport={{ once: true }}
         >
           <Tabs defaultValue="all">
-            <TabsList className="mx-auto mb-10 flex w-fit gap-2" variant="line">
+            <TabsList className="mx-auto mb-10 flex flex-wrap w-fit gap-2 group-data-[orientation=horizontal]/tabs:h-auto" variant="line">
               <TabsTrigger 
                 value="all" 
                 className="
@@ -41,7 +44,7 @@ export function SkillsSection () {
                   transition-colors
                 "
               >
-                Show all
+                {t.skills.showAll}
               </TabsTrigger>
               <TabsTrigger 
                 value="frontend" 
@@ -52,7 +55,7 @@ export function SkillsSection () {
                   transition-colors
                 "
               >
-                Frontend
+                {t.skills.frontend}
               </TabsTrigger>
               <TabsTrigger 
                 value="tools" 
@@ -63,7 +66,7 @@ export function SkillsSection () {
                   transition-colors
                 "
               >
-                Tools
+                {t.skills.tools}
               </TabsTrigger>
               <TabsTrigger 
                 value="design" 
@@ -74,7 +77,7 @@ export function SkillsSection () {
                   transition-colors
                 "
               >
-                Design
+                {t.skills.design}
               </TabsTrigger>
             </TabsList>
 

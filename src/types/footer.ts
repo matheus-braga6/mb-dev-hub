@@ -2,7 +2,7 @@ import type { LocalizedText } from "@/i18n/config"
 
 export type FooterLink = {
   label: LocalizedText
-  href: string
+  href: string | LocalizedText
   external?: boolean
   download?: boolean
 }

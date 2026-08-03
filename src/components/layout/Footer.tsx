@@ -59,9 +59,9 @@ export function Footer() {
 
               <ul className="space-y-2 text-sm text-slate-400">
                 {quickLinks.links.map((link) => (
-                  <li key={link.href}>
+                  <li key={link.label.en}>
                     <a
-                      href={link.href}
+                      href={typeof link.href === "string" ? link.href : tl(link.href)}
                       target={link.external ? "_blank" : undefined}
                       rel={link.external ? "noopener noreferrer" : undefined}
                       download={link.download}
@@ -79,9 +79,9 @@ export function Footer() {
 
               <ul className="space-y-2 text-sm text-slate-400">
                 {contactLinks.links.map((link) => (
-                  <li key={link.href}>
+                  <li key={link.label.en}>
                     <a
-                      href={link.href}
+                      href={typeof link.href === "string" ? link.href : tl(link.href)}
                       target={link.external ? "_blank" : undefined}
                       rel={link.external ? "noopener noreferrer" : undefined}
                       className="hover:text-slate-200"

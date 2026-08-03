@@ -8,9 +8,10 @@ import { MailFillIcon } from "@/assets/icons/MailFillIcon"
 import { WhatsAppFillIcon } from "@/assets/icons/WhatsAppFillIcon"
 import { motion } from "motion/react"
 import { heroContentVariants, heroImageVariants, heroLineVariants } from "@/lib/animations/hero"
+import { resumeFile } from "@/data/resume"
 
 export function HeroSection () {
-  const { t } = useLanguage()
+  const { t, tl } = useLanguage()
 
   return (
     <section 
@@ -81,7 +82,7 @@ export function HeroSection () {
                 >
                   <a
                     className="hover:cursor-pointer"
-                    href="./resume.pdf"
+                    href={tl(resumeFile)}
                     download
                   >
                     {t.hero.downloadResume}

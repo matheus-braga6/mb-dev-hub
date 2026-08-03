@@ -1,4 +1,5 @@
 import type { FooterSection } from "@/types/footer"
+import { resumeFile } from "@/data/resume"
 
 export const quickLinks: FooterSection = {
   title: {
@@ -14,7 +15,7 @@ export const quickLinks: FooterSection = {
     { label: { en: "Contact", pt: "Contato" }, href: "#contact" },
     {
       label: { en: "Download Resume", pt: "Baixar Currículo" },
-      href: "./resume.pdf",
+      href: resumeFile,
       download: true,
       external: true,
     },

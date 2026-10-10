@@ -27,7 +27,8 @@ export function ProjectCard({ project }: ProjectCardProps) {
     Twig: "bg-[#bacf29] text-black",
     i18n: "bg-[#3fcece] text-white",
     Pinia: "bg-[#ffcf4c] text-black",
-    Docussaurus: "bg-[#44ce64] text-black"
+    Docusaurus: "bg-[#44ce64] text-black",
+    Tailwind: "bg-[#0b1120] text-[#38bdf8]",
   }
 
   return (

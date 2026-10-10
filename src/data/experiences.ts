@@ -25,8 +25,8 @@ export const experiences: Experience[] = [
         pt: "Trabalho em colaboração com designers, gerentes de projeto e desenvolvedores para entregar soluções digitais escaláveis e de alta qualidade.",
       },
       {
-        en: "Also contribute to the implementation and maintenance of e-commerce stores on the increazy platform, as well as internal projects using modern frontend technologies.",
-        pt: "Implementação e manutenção de lojas virtuais na plataforma increazy, além de contribuir com projetos internos utilizando tecnologias modernas de desenvolvimento frontend."
+        en: "Implementation and maintenance of online stores on platforms such as Shopify and increazy.",
+        pt: "Implementação e manutenção de lojas virtuais em plataformas como Shopify e increazy.",
       },
     ],
   },

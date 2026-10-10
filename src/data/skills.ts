@@ -79,20 +79,25 @@ export const skills: Skill[] = [
   { id: 16, 
     name: "WordPress", 
     category: "tools", 
-    icon: "./skills/wordpress.svg" 
+    icon: "./skills/wordpress.svg"
   },
-  { id: 17, 
-    name: "VS Code", 
-    category: "tools", 
-    icon: "./skills/vscode.svg" 
+  { id: 17,
+    name: "Shopify",
+    category: "tools",
+    icon: "./skills/shopify.svg"
   },
-  { id: 18, 
-    name: "Figma", 
-    category: "design", 
-    icon: "./skills/figma.svg" 
+  { id: 18,
+    name: "VS Code",
+    category: "tools",
+    icon: "./skills/vscode.svg"
   },
-  { id: 19, 
-    name: "Canva", 
+  { id: 19,
+    name: "Figma",
+    category: "design",
+    icon: "./skills/figma.svg"
+  },
+  { id: 20,
+    name: "Canva",
     category: "design", 
     icon: "./skills/canva.svg" 
   }

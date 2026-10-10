@@ -2,6 +2,18 @@ import type { Project } from "@/types/project"
 
 export const projects: Project[] = [
   {
+    id: "stox",
+    title: "Stox",
+    description: {
+      en: "A digital vehicle inventory management platform built for car dealerships and sellers looking to go beyond Instagram-only advertising. Stox combines a professional website to showcase vehicles with a complete dashboard for managing inventory. Built with React, TypeScript, and Tailwind, with a focus on usability, performance, and responsive design.",
+      pt: "Uma plataforma de gestão digital de estoque de veículos desenvolvida para garagens e vendedores de carros que querem ir além da divulgação apenas pelo Instagram. A Stox une um site profissional para exibir os veículos a um painel completo para gerenciar o estoque. Construída com React, TypeScript e Tailwind, com foco em usabilidade, performance e design responsivo.",
+    },
+    image: "./projects/stox.webp",
+    technologies: ["TypeScript", "React", "Tailwind"],
+    type: "personal",
+    demoUrl: "https://stox.app.br/",
+  },
+  {
     id: "merrygo",
     title: "MerryGo Carousel",
     description: {
@@ -15,6 +27,66 @@ export const projects: Project[] = [
     demoUrl: "https://matheus-braga6.github.io/merrygo/",
   },
   {
+    id: "o-jardim",
+    title: "Ô Jardim",
+    description: {
+      en: "An institutional website and a complete admin dashboard developed for a store of handcrafted home and body products. The dashboard brings together cash flow entries, orders, inventory, raw materials, costs, and revenue, while the institutional website showcases the products with the refinement and delicate touch that define the brand.",
+      pt: "Um site institucional e um painel administrativo completo desenvolvidos para uma loja de produtos artesanais para casa e corpo. O painel centraliza lançamentos de caixa, pedidos, estoque, insumos, custos e receitas, enquanto o site institucional exibe os produtos com o refinamento e a delicadeza que definem a marca.",
+    },
+    image: "./projects/o-jardim.webp",
+    technologies: ["TypeScript", "React", "Tailwind"],
+    type: "professional",
+    demoUrl: "https://ojardimaromas.com.br/",
+  },
+  {
+    id: "piet-ecommerce",
+    title: "Piet E-commerce",
+    description: {
+      en: "A full-featured e-commerce platform developed while working at Increazy, where I was responsible for the front-end implementation. The project includes CMS integrations for dynamic content management, a scalable architecture, and a strong focus on performance, usability, and maintainability.",
+      pt: "Uma plataforma de e-commerce completa desenvolvida durante meu trabalho na Increazy, onde fui responsável pela implementação do front-end. O projeto inclui integrações com CMS para gerenciamento dinâmico de conteúdo, uma arquitetura escalável e forte foco em performance, usabilidade e manutenibilidade.",
+    },
+    image: "./projects/piet.webp",
+    technologies: ["JavaScript", "HTML", "CSS", "Twig"],
+    type: "professional",
+    demoUrl: "https://www.piet.com.br/",
+  },
+  {
+    id: "ajinomoto-ecommerce",
+    title: "Ajinomoto E-commerce",
+    description: {
+      en: "A full-featured e-commerce platform developed while working at Increazy, where I was responsible for the front-end implementation. The project includes CMS integrations for dynamic content management, a scalable architecture, and a strong focus on performance, usability, and maintainability.",
+      pt: "Uma plataforma de e-commerce completa desenvolvida durante meu trabalho na Increazy, onde fui responsável pela implementação do front-end. O projeto inclui integrações com CMS para gerenciamento dinâmico de conteúdo, uma arquitetura escalável e forte foco em performance, usabilidade e manutenibilidade.",
+    },
+    image: "./projects/ajinomoto.webp",
+    technologies: ["JavaScript", "HTML", "CSS", "Twig"],
+    type: "professional",
+    demoUrl: "https://loja.ajinomoto.com.br/",
+  },
+  {
+    id: "casa-do-produtor-ecommerce",
+    title: "Casa do Produtor E-commerce",
+    description: {
+      en: "A full-featured e-commerce platform developed while working at Increazy, where I was responsible for the front-end implementation. The project includes CMS integrations for dynamic content management, a scalable architecture, and a strong focus on performance, usability, and maintainability.",
+      pt: "Uma plataforma de e-commerce completa desenvolvida durante meu trabalho na Increazy, onde fui responsável pela implementação do front-end. O projeto inclui integrações com CMS para gerenciamento dinâmico de conteúdo, uma arquitetura escalável e forte foco em performance, usabilidade e manutenibilidade.",
+    },
+    image: "./projects/casa-do-produtor.webp",
+    technologies: ["JavaScript", "HTML", "CSS", "Twig"],
+    type: "professional",
+    demoUrl: "https://www.casadoprodutor.com.br/",
+  },
+  {
+    id: "increazy-uikit",
+    title: "Increazy UI Kit",
+    description: {
+      en: "A reusable UI Kit developed at Increazy, built with HTML, CSS, Vanilla JavaScript, and Twig. The project focuses on consistency, scalability, and component reuse, providing a solid foundation for building interfaces across multiple projects.",
+      pt: "Um UI Kit reutilizável desenvolvido na Increazy, construído com HTML, CSS, JavaScript puro e Twig. O projeto foca em consistência, escalabilidade e reutilização de componentes, oferecendo uma base sólida para a construção de interfaces em diversos projetos.",
+    },
+    image: "./projects/increazy-ui.webp",
+    technologies: ["HTML", "SCSS", "JavaScript", "Twig", "Docusaurus"],
+    type: "professional",
+    demoUrl: "https://ui.increazy.com/",
+  },
+  {
     id: "increazy-dashboard",
     title: "Increazy Dashboard",
     description: {
@@ -25,43 +97,6 @@ export const projects: Project[] = [
     technologies: ["JavaScript", "TypeScript", "Vue.js", "Nuxt.js", "Pinia", "i18n", "HTML", "SCSS"],
     type: "professional",
     demoUrl: "https://dashboard.increazy.com/",
-  },
-  {
-    id: "ajinomoto-ecommerce",
-    title: "Ajinomoto E-commerce",
-    description: {
-      en: "A full-featured e-commerce platform developed while working at Increazy, where I was responsible for the front-end implementation. The project includes CMS integrations for dynamic content management, a scalable architecture, and a strong focus on performance, usability, and maintainability.",
-      pt: "Uma plataforma de e-commerce completa desenvolvida durante meu trabalho na Increazy, onde fui responsável pela implementação do front-end. O projeto inclui integrações com CMS para gerenciamento dinâmico de conteúdo, uma arquitetura escalável e forte foco em performance, usabilidade e manutenibilidade.",
-    },
-    image: "./projects/ajinomoto.webp",
-    technologies: ["JavaScript", "Vue.js", "HTML", "CSS", "Twig"],
-    type: "professional",
-    demoUrl: "https://loja.ajinomoto.com.br/",
-  },
-  {
-    id: "react-assembly",
-    title: "React Assembly: Endgame",
-    description: {
-      en: "A React-based word guessing game called Assembly: Endgame, built with HTML and CSS. Players use programming languages as lives to guess the correct word and prevent Assembly from taking over the world. The project emphasizes interactive gameplay, responsive design, and a fun, engaging user experience.",
-      pt: "Um jogo de adivinhação de palavras em React chamado Assembly: Endgame, construído com HTML e CSS. Os jogadores usam linguagens de programação como vidas para adivinhar a palavra correta e impedir que o Assembly domine o mundo. O projeto enfatiza jogabilidade interativa, design responsivo e uma experiência divertida e envolvente.",
-    },
-    image: "./projects/assembly-endgame.webp",
-    technologies: ["React", "HTML", "CSS"],
-    type: "personal",
-    repoUrl: "https://github.com/matheus-braga6/react-assembly-endgame",
-    demoUrl: "https://matheus-braga6.github.io/react-assembly-endgame/",
-  },
-  {
-    id: "increazy-uikit",
-    title: "Increazy UI Kit",
-    description: {
-      en: "A reusable UI Kit developed at Increazy, built with HTML, CSS, Vanilla JavaScript, and Twig. The project focuses on consistency, scalability, and component reuse, providing a solid foundation for building interfaces across multiple projects.",
-      pt: "Um UI Kit reutilizável desenvolvido na Increazy, construído com HTML, CSS, JavaScript puro e Twig. O projeto foca em consistência, escalabilidade e reutilização de componentes, oferecendo uma base sólida para a construção de interfaces em diversos projetos.",
-    },
-    image: "./projects/increazy-ui.webp",
-    technologies: ["HTML", "SCSS", "JavaScript", "Twig", "Docussaurus"],
-    type: "professional",
-    demoUrl: "https://ui.increazy.com/",
   },
   {
     id: "automizei-lp",
@@ -83,46 +118,8 @@ export const projects: Project[] = [
       pt: "Uma plataforma de e-commerce completa desenvolvida durante meu trabalho na Increazy, onde fui responsável pela implementação do front-end. O projeto inclui integrações com CMS para gerenciamento dinâmico de conteúdo, uma arquitetura escalável e forte foco em performance, usabilidade e manutenibilidade.",
     },
     image: "./projects/acamargo.webp",
-    technologies: ["JavaScript", "Vue.js", "HTML", "CSS", "Twig"],
+    technologies: ["JavaScript", "HTML", "CSS", "Twig"],
     type: "professional",
     demoUrl: "https://www.acamargo.com/",
   },
-  {
-    id: "casa-do-produtor-ecommerce",
-    title: "Casa do Produtor E-commerce",
-    description: {
-      en: "A full-featured e-commerce platform developed while working at Increazy, where I was responsible for the front-end implementation. The project includes CMS integrations for dynamic content management, a scalable architecture, and a strong focus on performance, usability, and maintainability.",
-      pt: "Uma plataforma de e-commerce completa desenvolvida durante meu trabalho na Increazy, onde fui responsável pela implementação do front-end. O projeto inclui integrações com CMS para gerenciamento dinâmico de conteúdo, uma arquitetura escalável e forte foco em performance, usabilidade e manutenibilidade.",
-    },
-    image: "./projects/casa-do-produtor.webp",
-    technologies: ["JavaScript", "Vue.js", "HTML", "CSS", "Twig"],
-    type: "professional",
-    demoUrl: "https://www.casadoprodutor.com.br/",
-  },
-  {
-    id: "react-chef-ai",
-    title: "React Chef AI",
-    description: {
-      en: "A web application developed with React, HTML, and CSS, allowing users to enter ingredients and receive AI-generated recipes. The project emphasizes interactivity, responsive design, and a smooth, user-friendly experience.",
-      pt: "Uma aplicação web desenvolvida com React, HTML e CSS, que permite aos usuários inserir ingredientes e receber receitas geradas por IA. O projeto enfatiza interatividade, design responsivo e uma experiência fluida e intuitiva.",
-    },
-    image: "./projects/chef-ai.webp",
-    technologies: ["React", "HTML", "CSS"],
-    type: "personal",
-    repoUrl: "https://github.com/matheus-braga6/react-chef-ai",
-    demoUrl: "https://matheus-braga6.github.io/react-chef-ai/",
-  },
-  {
-    id: "react-tenzies",
-    title: "React Tenzies Game",
-    description: {
-      en: "A dice game built with React, HTML, and CSS, where players aim to match dice combinations. The project emphasizes dynamic interactions, responsive design, and engaging user experience.",
-      pt: "Um jogo de dados construído com React, HTML e CSS, no qual os jogadores buscam combinar os dados. O projeto enfatiza interações dinâmicas, design responsivo e uma experiência de usuário envolvente.",
-    },
-    image: "./projects/tenzies.webp",
-    technologies: ["React", "HTML", "CSS"],
-    type: "personal",
-    repoUrl: "https://github.com/matheus-braga6/react-tenzies-game",
-    demoUrl: "https://matheus-braga6.github.io/react-tenzies-game/",
-  }
 ]

@@ -75,6 +75,7 @@ export function CertificationSection () {
                     "
                   >
                     <img
+                      loading="lazy"
                       src={cert.image}
                       alt={cert.alt}
                       className="w-full h-full object-cover"

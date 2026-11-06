@@ -17,6 +17,7 @@ export function ProjectCard({ project }: ProjectCardProps) {
 
   const techColors: Record<string, string> = {
     React: "bg-[#00d8ff] text-black",
+    "Next.js": "bg-black text-white",
     "Vue.js": "bg-[#0c9400] text-white",
     "Nuxt.js": "bg-[#0c1640] text-white",
     TypeScript: "bg-[#00346d] text-white",
@@ -73,8 +74,10 @@ export function ProjectCard({ project }: ProjectCardProps) {
             opacity-0 translate-y-2
             transition-all duration-300
             group-hover:opacity-100 group-hover:translate-y-0
+            group-focus-within:opacity-100 group-focus-within:translate-y-0
+            [@media(hover:none)]:opacity-100 [@media(hover:none)]:translate-y-0
           "
-        >          
+        >
           {project.technologies.map((tech) => (
             <Badge
               key={tech}

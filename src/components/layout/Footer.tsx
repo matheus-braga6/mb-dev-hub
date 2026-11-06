@@ -46,7 +46,7 @@ export function Footer() {
                 </SocialIconButton>
 
                 <SocialIconButton 
-                  href="https://wa.me/+5544999546644" 
+                  href="https://wa.me/5544999546644"
                   ariaLabel="WhatsApp"
                 >
                   <WhatsAppFillIcon className="h-6 w-6" />

@@ -20,7 +20,7 @@ export function SkillsGrid({ items }: SkillsGridProps) {
           <img
             loading="lazy"
             src={skill.icon}
-            alt={skill.name}
+            alt=""
             className="
               h-40 w-40 
               object-contain 

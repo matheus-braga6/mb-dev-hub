@@ -33,9 +33,8 @@ export function ContactSection() {
             className="
               max-w-xl mx-auto 
               flex flex-col gap-6 
-              bg-blue800 
-              shadow=2xl
-              p-6 
+              bg-blue800
+              p-6
               border border-blue600 rounded-3xl
             "
           >
@@ -114,6 +113,12 @@ export function ContactSection() {
                 t.contact.send
               )}
             </Button>
+
+            {state.errors && (
+              <p role="alert" className="text-sm text-center text-red-400">
+                {t.contact.error}
+              </p>
+            )}
           </form>
         </motion.div>
       </Container>

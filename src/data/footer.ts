@@ -34,7 +34,6 @@ export const contactLinks: FooterSection = {
         pt: "mbdevelopment.dev@gmail.com",
       },
       href: "mailto:mbdevelopment.dev@gmail.com",
-      external: true,
     },
     {
       label: {

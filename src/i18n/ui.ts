@@ -11,7 +11,8 @@ const en = {
   },
   hero: {
     greeting: "Hi, I'm",
-    tagline: "Frontend Developer | TypeScript | React | Vue.js",
+    role: "Frontend Developer",
+    stack: ["React · Next.js · TypeScript", "Vue.js · Nuxt.js", "Web Performance"],
     intro:
       "I'm a frontend developer focused on building scalable, accessible, and high-quality user interfaces using modern web technologies.",
     myProjects: "My Projects",
@@ -43,7 +44,7 @@ const en = {
     languagesTitle: "Languages",
     languages: [
       { name: "Portuguese", level: "Native" },
-      { name: "English", level: "B1 (Technical Reading & Professional Communication)" },
+      { name: "English", level: "Intermediate (B1)" },
       { name: "Spanish", level: "Intermediate" },
     ],
     experienceTitle: "Experience",
@@ -57,9 +58,11 @@ const en = {
   },
   certifications: {
     title: "Learning & Certifications",
+    previous: "Previous certificate",
+    next: "Next certificate",
   },
   contact: {
-    title: "Send Your Message",
+    title: "Get in Touch",
     nameLabel: "Name",
     namePlaceholder: "Your name",
     emailLabel: "Email",
@@ -67,11 +70,12 @@ const en = {
     messageLabel: "Message",
     messagePlaceholder: "Your message...",
     send: "Send Message",
-    submitted: "Message Submitted",
+    submitted: "Message Sent",
+    error: "Something went wrong. Please email me at mbdevelopment.dev@gmail.com.",
   },
   footer: {
     tagline:
-      "Let's connect and build something great together!\nI'm always open to new opportunities and exciting challenges.",
+      "Let's connect and build something great together!\nFeel free to reach out about projects, ideas or anything frontend.",
     rightsReserved: "All rights reserved.",
   }
 }
@@ -89,7 +93,8 @@ const pt: UIStrings = {
   },
   hero: {
     greeting: "Olá, eu sou o",
-    tagline: "Desenvolvedor Frontend | TypeScript | React | Vue.js",
+    role: "Desenvolvedor Frontend",
+    stack: ["React · Next.js · TypeScript", "Vue.js · Nuxt.js", "Web Performance"],
     intro:
       "Sou um desenvolvedor frontend focado em construir interfaces escaláveis, acessíveis e de alta qualidade utilizando tecnologias web modernas.",
     myProjects: "Meus Projetos",
@@ -105,7 +110,7 @@ const pt: UIStrings = {
   about: {
     yearsOfExperience: "Anos de Experiência",
     projectsCompleted: "Projetos Concluídos",
-    education: "Formação",
+    education: "Educação",
     educationSchool: "Desenvolvedor Frontend Autodidata",
     educationPeriod: "2023 – Presente",
     softSkillsTitle: "Habilidades Interpessoais",
@@ -121,7 +126,7 @@ const pt: UIStrings = {
     languagesTitle: "Idiomas",
     languages: [
       { name: "Português", level: "Nativo" },
-      { name: "Inglês", level: "B1 (Leitura Técnica & Comunicação Profissional)" },
+      { name: "Inglês", level: "Intermediário (B1)" },
       { name: "Espanhol", level: "Intermediário" },
     ],
     experienceTitle: "Experiência",
@@ -135,6 +140,8 @@ const pt: UIStrings = {
   },
   certifications: {
     title: "Cursos & Certificações",
+    previous: "Certificado anterior",
+    next: "Próximo certificado",
   },
   contact: {
     title: "Envie Sua Mensagem",
@@ -146,10 +153,11 @@ const pt: UIStrings = {
     messagePlaceholder: "Sua mensagem...",
     send: "Enviar Mensagem",
     submitted: "Mensagem Enviada",
+    error: "Algo deu errado. Envie um e-mail para mbdevelopment.dev@gmail.com.",
   },
   footer: {
     tagline:
-      "Vamos nos conectar e construir algo incrível juntos!\nEstou sempre aberto a novas oportunidades e desafios.",
+      "Vamos nos conectar e construir algo incrível juntos!\nFique à vontade para falar comigo sobre projetos, ideias ou qualquer assunto de frontend.",
     rightsReserved: "Todos os direitos reservados.",
   }
 }

@@ -17,16 +17,24 @@ export const experiences: Experience[] = [
     },
     responsibilities: [
       {
-        en: "Working on the development and maintenance of institutional websites and e-commerce platforms, with a focus on frontend development using WordPress, PHP, JavaScript, HTML, and CSS to implement new features, resolve bugs, and improve performance across client projects.",
-        pt: "Atuação no desenvolvimento e manutenção de sites institucionais e e-commerces, com foco em desenvolvimento frontend utilizando WordPress, PHP, JavaScript, HTML e CSS para implementar novas funcionalidades, realizar correções de bugs e promover melhorias de desempenho em projetos de clientes.",
+        en: "Build and maintain websites with HTML, CSS, Tailwind, Twig, JavaScript and TypeScript, plus WordPress when needed",
+        pt: "Desenvolvimento e manutenção de sites com HTML, CSS, Tailwind, Twig, JavaScript e TypeScript, além de WordPress quando necessário",
       },
       {
-        en: "Collaborate with designers, project managers, and developers to deliver scalable, high-quality digital solutions.",
-        pt: "Trabalho em colaboração com designers, gerentes de projeto e desenvolvedores para entregar soluções digitais escaláveis e de alta qualidade.",
+        en: "Implement and maintain e-commerce stores (PWAs) on the increazy platform",
+        pt: "Implementação e manutenção de lojas e-commerce (PWAs) na plataforma increazy",
       },
       {
-        en: "Implementation and maintenance of online stores on platforms such as Shopify and increazy.",
-        pt: "Implementação e manutenção de lojas virtuais em plataformas como Shopify e increazy.",
+        en: "Develop and customize Shopify stores and themes with Liquid",
+        pt: "Desenvolvimento e customização de lojas e temas Shopify com Liquid",
+      },
+      {
+        en: "Ship new features, fix bugs and improve performance across client projects",
+        pt: "Entrega de novas funcionalidades, correção de bugs e melhorias de performance em projetos de clientes",
+      },
+      {
+        en: "Collaborate with designers, project managers and developers",
+        pt: "Colaboração com designers, gerentes de projeto e desenvolvedores",
       },
     ],
   },
@@ -35,7 +43,7 @@ export const experiences: Experience[] = [
       en: "Frontend Developer",
       pt: "Desenvolvedor Frontend",
     },
-    company: "Increazy",
+    company: "increazy",
     location: {
       en: "Remote",
       pt: "Remoto",
@@ -46,64 +54,28 @@ export const experiences: Experience[] = [
     },
     responsibilities: [
       {
-        en: "Worked on the development and maintenance of web applications focused on e-commerce, marketing pages, administrative dashboards, and the company’s internal CMS.",
-        pt: "Atuação no desenvolvimento e manutenção de aplicações web voltadas para e-commerce, páginas de marketing, dashboard administrativo e CMS interno da empresa",
+        en: "Built and maintained headless e-commerce stores as Progressive Web Apps (PWAs) with CMS integrations, using JavaScript, Twig, HTML and CSS",
+        pt: "Desenvolvimento e manutenção de lojas e-commerce headless como Progressive Web Apps (PWAs), com integrações a CMS, usando JavaScript, Twig, HTML e CSS",
       },
       {
-        en: "Developed new features and interfaces with a focus on performance, responsiveness, user experience, and maintainable code.",
-        pt: "Desenvolvimento de novas funcionalidades e interfaces com foco em performance, responsividade, experiência do usuário e facilidade de manutenção."
+        en: "Developed features for the platform's dashboard with Vue.js, Nuxt.js, TypeScript, Pinia, i18n and SCSS",
+        pt: "Desenvolvimento de funcionalidades para o dashboard da plataforma com Vue.js, Nuxt.js, TypeScript, Pinia, i18n e SCSS",
       },
       {
-        en: "Created reusable components and standardized frontend structures to ensure visual consistency and scalability across different projects.",
-        pt: "Criação de componentes reutilizáveis e estruturas frontend padronizadas para garantir consistência visual e escalabilidade entre diferentes projetos."
+        en: "Created reusable components and standardized frontend structures across projects",
+        pt: "Criação de componentes reutilizáveis e padronização de estruturas frontend entre projetos",
       },
       {
-        en: "Participated in technical decisions related to frontend architecture, code organization, application structure, and business rule implementation.",
-        pt: "Participação em decisões técnicas relacionadas à arquitetura frontend, organização de código, estrutura das aplicações e implementação de regras de negócio."
+        en: "Improved frontend performance with a focus on PageSpeed and Core Web Vitals",
+        pt: "Melhorias de performance frontend com foco em PageSpeed e Core Web Vitals",
       },
       {
-        en: "Integrated and consumed APIs for communication between frontend and backend systems.",
-        pt: "Integração e consumo de APIs para comunicação entre frontend e backend"
+        en: "Integrated REST APIs and took part in decisions on frontend architecture and code organization",
+        pt: "Integração com APIs REST e participação em decisões de arquitetura frontend e organização de código",
       },
       {
-        en: "Collaborated directly with different teams to understand requirements, gather project needs, and define solutions for new features.",
-        pt: "Contato direto com diferentes áreas da empresa para entendimento de demandas, levantamento de requisitos e definição de soluções para novas funcionalidades"
-      },
-      {
-        en: "Contributed to frontend performance improvements, including optimizations focused on PageSpeed and Core Web Vitals metrics.",
-        pt: "Contribuição para melhorias de performance frontend, incluindo otimizações voltadas para métricas de PageSpeed e Core Web Vitals"
-      },
-    ],
-  },
-  {
-    role: {
-      en: "Freelance Frontend Developer",
-      pt: "Desenvolvedor Frontend Freelancer",
-    },
-    location: {
-      en: "Remote",
-      pt: "Remoto",
-    },
-    period: {
-      en: "2024 – Present",
-      pt: "2024 – Presente",
-    },
-    responsibilities: [
-      {
-        en: "Developed custom web applications and interfaces for small businesses and independent projects.",
-        pt: "Desenvolvimento de aplicações e interfaces web personalizadas para pequenos negócios e projetos independentes"
-      },
-      {
-        en: "Built responsive frontend solutions using React, Vue.js, JavaScript, and TypeScript, with a focus on usability, code organization, and maintainability",
-        pt: "Criação de soluções frontend responsivas utilizando React, Vue.js, JavaScript e TypeScript, com foco em usabilidade, organização e manutenção do código."
-      },
-      {
-        en: "Worked directly with clients to gather requirements, define project scope, align expectations, and deliver solutions tailored to each project’s needs.",
-        pt: "Contato direto com clientes para levantamento de requisitos, definição de escopo, alinhamento de expectativas e entrega de soluções adaptadas às necessidades de cada projeto."
-      },
-      {
-        en: "Integrated APIs and developed dynamic features for different types of web applications.",
-        pt: "Integração com APIs e desenvolvimento de funcionalidades dinâmicas para diferentes tipos de aplicação web."
+        en: "Worked directly with other teams to gather requirements and define solutions for new features",
+        pt: "Contato direto com outras áreas para levantamento de requisitos e definição de soluções para novas funcionalidades",
       },
     ],
   },

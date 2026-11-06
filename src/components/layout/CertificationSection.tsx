@@ -13,8 +13,8 @@ export function CertificationSection () {
 
   const galleryRef = useRef<HTMLDivElement | null>(null)
   const galleryInnerRef = useRef<HTMLDivElement | null>(null)
-  const galleryArrowNextRef = useRef<HTMLDivElement | null>(null)
-  const galleryArrowPrevRef = useRef<HTMLDivElement | null>(null)
+  const galleryArrowNextRef = useRef<HTMLButtonElement | null>(null)
+  const galleryArrowPrevRef = useRef<HTMLButtonElement | null>(null)
   const galleryPaginationRef = useRef<HTMLDivElement | null>(null)
 
   useEffect(() => {
@@ -67,6 +67,7 @@ export function CertificationSection () {
                     key={cert.id}
                     href={cert.link}
                     target="_blank"
+                    rel="noopener noreferrer"
                     className="
                       box-border 
                       shrink-0 
@@ -87,8 +88,10 @@ export function CertificationSection () {
               </div>
             </div>
 
-            <div 
-              ref={galleryArrowPrevRef} 
+            <button
+              ref={galleryArrowPrevRef}
+              type="button"
+              aria-label={t.certifications.previous}
               className="
                 certifications__arrow certifications__arrow--prev
                 w-7 h-7 w900:w-10 w900:h-10
@@ -96,13 +99,16 @@ export function CertificationSection () {
                 flex items-center justify-center
                 rounded-full cursor-pointer
                 bg-slate-50 hover:bg-slate-400 transition-colors
+                focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-accent
               "
             >
               <ArrowLeftIcon className="w-5 h-5 w900:w-6 w900:h-6 text-slate-950"/>
-            </div>
+            </button>
 
-            <div 
-              ref={galleryArrowNextRef} 
+            <button
+              ref={galleryArrowNextRef}
+              type="button"
+              aria-label={t.certifications.next}
               className="
                 certifications__arrow certifications__arrow--next
                 w-7 h-7 w900:w-10 w900:h-10
@@ -110,10 +116,11 @@ export function CertificationSection () {
                 flex items-center justify-center
                 rounded-full cursor-pointer
                 bg-slate-50 hover:bg-slate-400 transition-colors
+                focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-accent
               "
             >
               <ArrowRightIcon className="w-5 h-5 w900:w-6 w900:h-6 text-slate-950"/>
-            </div>
+            </button>
 
             <div 
               ref={galleryPaginationRef}

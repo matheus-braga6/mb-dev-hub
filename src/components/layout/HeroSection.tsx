@@ -1,3 +1,4 @@
+import { Fragment } from "react"
 import { useLanguage } from "@/i18n/LanguageContext"
 import { Container } from "./Container"
 import { Button } from "@/components/ui/button"
@@ -38,7 +39,15 @@ export function HeroSection () {
             </h1>
 
             <span className="mt-4 block text-sm md:text-base">
-              {t.hero.tagline}
+              {t.hero.role}
+              <span className="block">
+                {t.hero.stack.map((item, index) => (
+                  <Fragment key={item}>
+                    {index > 0 && " | "}
+                    <span className="whitespace-nowrap">{item}</span>
+                  </Fragment>
+                ))}
+              </span>
             </span>
 
             <motion.div
@@ -114,7 +123,7 @@ export function HeroSection () {
               </SocialIconButton>
 
               <SocialIconButton 
-                href="https://wa.me/+5544999546644" 
+                href="https://wa.me/5544999546644"
                 ariaLabel="WhatsApp"
               >
                 <WhatsAppFillIcon className="h-6 w-6" />
